@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+login page
+</title>
+<style type="text/css">
+	body{
+		background: url('stock1.png');
+		background-size: cover;
+	}
+	center
+	{
+		position:relative;
+		bottom:-100;
+	}
+	form{
+		position: relative;
+		bottom: -100px;
+		right: 200px;
+	}
+</style>
+</head>
+<body>
+
+<center>BANK MANAGEMENT SYSTEM</center>
+
+<form name="login">
+<center><b>Username   <input type="text" name="userid"/><br><br></b></center> 
+<center><b>Password   <input type="password" name="pswrd"/><br><br></b></center>
+<center><input type="button" onclick="check(this.form)" value="login"/>
+<input type="reset" value="cancel"/></center>
+</form>
+<script language="javascript">
+function check(form)
+   if(form.userid.value=="myuserid" && form.pswrd.value=="mypaswrd")
+   {
+       window.open('target.html')
+    }
+   else
+ {
+   alert("error password or username")
+}
+}
+</script>
+</body>
+</html>
